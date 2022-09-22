@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative './pre_runner_boot'
+require_relative './pre_runner_boot.rb'
 
 agent_runner = AgentRunner.new
 

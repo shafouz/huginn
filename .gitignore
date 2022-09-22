@@ -1,3 +1,4 @@
+spec/
 *.rbc
 *.sassc
 .sass-cache
@@ -29,3 +30,4 @@ config/unicorn.rb
 db/schema.rb
 .local/
 spec/examples.txt
+test.rb

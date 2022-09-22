@@ -95,7 +95,7 @@ gem 'coffee-rails', '~> 5'
 gem 'daemons', '~> 1.1.9'
 gem 'delayed_job', '~> 4.1.8'
 gem 'delayed_job_active_record', github: 'dsander/delayed_job_active_record', branch: 'rails6-zeitwerk'
-gem 'devise', '~> 4.7.1'
+gem 'devise', github: 'heartcombo/devise'
 gem 'em-http-request', '~> 1.1.2'
 gem 'faraday', '~> 0.9'
 gem 'faraday_middleware', '~> 0.12.2'
@@ -208,3 +208,7 @@ end
 GemfileHelper.parse_each_agent_gem(ENV['ADDITIONAL_GEMS']) do |args|
   gem *args
 end
+
+gem "github_api", "~> 0.19.0"
+
+gem "pry", "~> 0.13.1"
