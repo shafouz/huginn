@@ -21,6 +21,8 @@ module Agents
             created_at: data[:created_at],
             url: "https://github.com/#{data[:repo]}/commit/#{commit[:sha]}"
           }
+
+          system "git clone https://github.com/#{data[:repo]} repos/#{data[:repo]}_#{data[:created_at]}"
         end
       end
     end
